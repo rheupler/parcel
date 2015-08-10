@@ -16,4 +16,11 @@ class Parcel
     total = @distance.*(0.01)
     total = total + total_package
   end
+
+  def gift_wrap
+    wrap = (@length * @width) + (@length * @height) + (@width * @height)
+    wrap = wrap * 2
+    wrap = wrap.*(0.10)
+    wrap.round(2)
+  end
 end
