@@ -15,13 +15,3 @@ get('/shipping_cost') do
   @shipping_cost = Parcel.new(length, width, height, weight, distance).cost_to_ship()
   erb(:shipping_cost)
 end
-
-get('/shipping_cost_gift') do
-  length = params.fetch('Length').to_i()
-  width = params.fetch('Width').to_i()
-  height = params.fetch('Height').to_i()
-  weight = params.fetch('Weight').to_i()
-  distance = params.fetch('Distance').to_i()
-  @shipping_cost_gift = Parcel.new(length, width, height, weight, distance).gift_wrap()
-  erb(:shipping_cost_gift)
-end

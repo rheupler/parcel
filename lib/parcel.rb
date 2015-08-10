@@ -17,11 +17,11 @@ class Parcel
     total = total + total_package
   end
 
-  def gift_wrap
-    wrap = (@length * @width) + (@length * @height) + (@width * @height)
-    wrap = wrap * 2
-    wrap = wrap.*(0.10)
-    wrap.round(2)
-    wrap = wrap + cost_to_ship
-  end
+  # def gift_wrap
+  #   wrap = (@length * @width) + (@length * @height) + (@width * @height)
+  #   wrap = wrap * 2
+  #   wrap = wrap.*(0.10)
+  #   wrap.round(2)
+  #   wrap = wrap + cost_to_ship
+  # end
 end
