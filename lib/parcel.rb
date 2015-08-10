@@ -22,5 +22,6 @@ class Parcel
     wrap = wrap * 2
     wrap = wrap.*(0.10)
     wrap.round(2)
+    wrap = wrap + cost_to_ship
   end
 end

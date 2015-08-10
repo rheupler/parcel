@@ -17,7 +17,7 @@ describe(Parcel) do
   describe('#gift_wrap') do
     it('calculates the price of gift wrap depending on the surface area of the parcel') do
     new_parcel = Parcel.new(2, 2, 2, 2, 20)
-    expect(new_parcel.gift_wrap()).to(eq(2.40))
+    expect(new_parcel.gift_wrap()).to(eq(18.6))
     end
   end
 end
